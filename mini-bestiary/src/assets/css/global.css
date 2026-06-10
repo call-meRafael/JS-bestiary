@@ -3,14 +3,21 @@
 @import url(./components/footer.css);
 
 :root {
-    
-    --white: hsl(0, 0%, 100%);
-    --red: hsl(358, 84%, 53%);
-    --black: hsl(0, 0%, 17%);
-    --gold: hsl(33, 62%, 48%);
-    --beige: hsl(42, 72%, 68%);
+  --white: 0 0% 100%;
+  --red: 358 84% 53%;
+  --black: 0 0% 17%;
+  --gold: 33 62% 48%;
+  --beige: 42 72% 68%;
+}
+
+.bg-white {
+  background-color: hsl(var(--white));
+}
+.bg-dark {
+  background-color: hsl(var(--black));
 }
 
 body {
-    background-color: hsl(var(--white));
+  min-height: 100vh;
+  background-color: hsl(var(--black) / .2);
 }
