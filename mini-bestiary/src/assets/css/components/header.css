@@ -48,9 +48,13 @@
 }
 
 @media (max-width: 375px) {
+    .header-info {
+        gap: 1rem;
+    }
     .header-call {
-        font-size: 0.724rem;
+        font-size: 0.524rem;
         text-align: center;
         max-width: 70%;
+        
     }
 }
