@@ -4,12 +4,52 @@
 
 :root {
   --white: 0 0% 100%;
+  --grey: 30 71% 95%;
   --red: 358 84% 53%;
   --black: 0 0% 17%;
+  --brown: 16 52% 23%;
   --gold: 33 62% 48%;
   --beige: 42 72% 68%;
+
+  --ff-1: 'Eagle Lake', sans-serif;
+  --ff-2: 'Jacquard 12', sans-serif;
+  --ff-3: 'Macondo Swash Caps', sans-serif;
+  --ff-4: 'Cinzel Decorative', cursive;
 }
 
+/* ----- Reset --------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--ff-1);
+  touch-action: manipulation;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* ---------------------- */
+
+
+/* --------- Classes ------------ */
 .bg-white {
   background-color: hsl(var(--white));
 }
@@ -17,7 +57,18 @@
   background-color: hsl(var(--black));
 }
 
+
+/* ------------------------------ */
+
 body {
+  max-width: 90rem;
+  margin-inline: auto;
   min-height: 100vh;
-  background-color: hsl(var(--black) / .2);
+  background-color: hsl(var(--grey));
+
+  @media (max-width: 375px) {
+    padding-inline: 1rem;
+  }
 }
+
+
