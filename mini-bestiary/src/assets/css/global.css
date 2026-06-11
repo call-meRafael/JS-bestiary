@@ -63,12 +63,10 @@ img {
 body {
   max-width: 90rem;
   margin-inline: auto;
-  min-height: 100vh;
+  min-height: 100dvh;
   background-color: hsl(var(--grey));
 
-  @media (max-width: 375px) {
-    padding-inline: 1rem;
-  }
+  padding-inline: 1rem;
 }
 
 
