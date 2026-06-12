@@ -1,0 +1,10 @@
+.bestiary-grid {
+    display: grid;
+    --col-width: 250px;
+    grid-template-columns: repeat(auto-fill, minmax(min(var(--col-width), 100%), 1fr));
+    outline: 2px solid deeppink;
+}
+
+.creature-card {
+    outline: 2px solid tomato;
+}
