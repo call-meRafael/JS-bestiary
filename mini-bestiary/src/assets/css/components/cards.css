@@ -35,10 +35,12 @@
   /* outline: 2px dotted limegreen; */
   border-radius: 0.5rem;
   overflow: hidden;
+  
 
   &::after {
     content: "";
     position: absolute;
+    
     
     
     
@@ -51,6 +53,26 @@
 
     z-index: 2;
     pointer-events: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    /* background-color: hsl(var(--brown) / .4); */
+    background: linear-gradient(
+    135deg,
+    hsl(var(--brown) / .2),
+    hsl(var(--brown) / .4),
+    hsl(var(--brown) / .6)
+  );
+
+    /* outline: 2px solid tomato; */
+    
+    inset: 0;
+    border: 2px solid hsl(var(--brown) / .5);
+    border-radius: .5rem;
+    box-shadow: var(--shadow-m);
+    z-index: -1;
   }
 
   & .creature-img {
