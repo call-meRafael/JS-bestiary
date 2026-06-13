@@ -76,7 +76,7 @@
   }
 
   & .creature-img {
-    box-shadow: var(--shadow-m);
+    /* box-shadow: var(--shadow-m); */
     border-radius: 0.5rem;
     width: 100%;
     transition: transform 0.3s ease-in-out;
