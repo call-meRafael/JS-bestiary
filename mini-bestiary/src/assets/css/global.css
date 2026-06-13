@@ -10,6 +10,25 @@
   --brown: 16 52% 23%;
   --gold: 33 62% 48%;
   --beige: 42 72% 68%;
+  
+  --brown-900: 28 28% 13%;
+  --brown-800: 26 29% 11%;
+  --brown-700: 26 29% 9%;
+
+  --brown-600: 24 13% 8%;
+  --brown-500: 26 15% 9%;
+  --brown-400: 27 16% 11%;
+
+  --test1: 16 41% 25%;
+  --test2: 16 52% 23%;
+  --test3: 24 75% 24%;
+
+  --beige-800: 29 45% 30%;
+  --beige-700: 31 39% 35%;
+
+  --gold-800: 39 36% 66%;
+  --gold-700: 39 39% 71%;
+  --gold-600: 34 35% 62%;
 
   --ff-1: 'Eagle Lake', sans-serif;
   --ff-2: 'Jacquard 12', sans-serif;
@@ -79,7 +98,7 @@ body {
   max-width: 90rem;
   margin-inline: auto;
   min-height: 100dvh;
-  background-color: hsl(var(--grey));
+  background-color: hsl(var(--brown) / 1);
 
   padding-inline: 1rem;
 }
