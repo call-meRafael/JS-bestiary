@@ -133,5 +133,6 @@
     .divider-img-box .divider-img {
         width: 5.325rem;
         height: 5.325rem;
+        filter: drop-shadow(1px 1px 1px #000000);
     }
 }
