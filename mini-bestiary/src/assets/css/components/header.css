@@ -42,6 +42,7 @@
 }
 
 .header-title {
+    font-family: var(--ff-4);
     color: hsl(var(--red) / .7);
     filter: drop-shadow(2px 1px 1px #000);
     font-size: clamp(1.3175rem, 0.7045rem + 2.0606vw, 2.25rem);
