@@ -12,16 +12,23 @@
   border-radius: .5rem;
 }
 
+.creature-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
 .creature-card {
   display: flex;
   flex-direction: column;
   gap: .2rem;
-  padding-inline: 1.8rem;
+  padding-inline: 1.8rem; 
   padding-block: 2.5rem;
   /* outline: 2px solid tomato; */
 
   min-height: 380px;
-  position: relative;
+  
 
   filter: drop-shadow(2px 6px 10px #00000040);
   transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -37,11 +44,14 @@
   /* outline: 2px dotted limegreen; */
   border-radius: 0.5rem;
   overflow: hidden;
+  /* position: relative; */
   
 
   &::after {
     content: "";
     position: absolute;
+    
+    
     
     
     
@@ -82,6 +92,9 @@
     /* box-shadow: var(--shadow-m); */
     border-radius: 0.5rem;
     width: 100%;
+    height: auto;
+    object-fit: cover;
+    
     transition: transform 0.3s ease-in-out;
 
     &:hover {
@@ -97,6 +110,8 @@
   align-items: center;
   justify-content: center;
   outline: 2px solid tomato;
+  border-radius: 0 0 .5rem .5rem;
+  padding-block: .2rem;
 
   & > h2 {
     text-align: center;
